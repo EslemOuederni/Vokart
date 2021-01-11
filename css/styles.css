@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar{
+    background-color: white;
+    margin-bottom:0;
+    padding-bottom: 0;
+    background-color: #f6f6f6;
+    padding: 60px 30px;
+    width: 100%;
+}
+.containernav{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin-bottom: 0;
+}
+
+.logo{
+    margin-left: 20px;
+    padding: 0;
+}
+.logo img{
+    width: 172px;
+    height: 112.46px;
+}
+.navlinks{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.navlinks a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-left: 10px;
+    position: relative;
+}
+.navlinks a:hover::after{
+    content: "";
+    border-bottom: 2px solid #000000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3px;
+
+}
+.navIcons{
+    grid-column: 3;
+    display : flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.jumbotron{
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    border-radius:0;
+
+}
+.jumbotron .container{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center; */
+    max-width: 100%;
+    display: flex;
+    margin-top: 80px;
+}
+.jumbotron .container .text{
+    margin-top: 70px;
+    margin-left: 120px;
+}
+.jumbotron .container .text button{
+    background-color: #a9a9ab;
+    color: white;
+    position: relative;
+    width: 220px;
+    height: 72px;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 100px;
+    border-radius: 8px;
+}
+.jumbotron h1{
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 86px;
+    margin-top: 30px;
+}
+h3 span{
+    font-size: 50px;
+    color: #BE9242;
+}
+.jumbotron p{
+    font-size:25px;
+    font-weight: 300;
+    line-height: 50px;
+}
+.jumbotron .image {
+    margin-top: 0;
+    margin-left: 150px;
+}
+
+.sales{
+    display: flex;
+    margin-top: 30px;
+    max-width: 100%;
+    
+}
+.sales .sale1, .sale2{
+    display: flex;
+    background-color: #f6f6f6;
+    margin-left: 10px;
+    width: 100%;
+    position: relative;
+}
+.sales .sale1 .text{
+    position: absolute;
+    left: 62.45%;
+    right: 0.3%;
+    top: 25.68%;
+    bottom: 69.45%;
+}
+.sales .sale2 .text{
+    position: absolute;
+    left: 55.45%;
+    right: 1.3%;
+    top: 20.68%;
+    bottom: 69.45%;
+}
+.sales .blue{
+    position: absolute;
+    left: -2.17%;
+    right: 70.7%;
+    top: 5.35%;
+    bottom: 4.26%;
+    margin-left: 10px;
+    width: 50%;
+
+}
+.sales .text h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 66px;
+}
+.sales .text p{
+    color: #CBA869;
+    font-size: 32px;
+    line-height:39px;
+    font-weight: 300;
+}
+.sales .text button{
+    background-color: #A7A0A0;
+    color: white;
+    padding: 10px 25px;
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.arrival{
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+.arrival h1{
+    font-size: 60;
+    font-weight: bold;
+    letter-spacing: 1.1px; 
+}
+.arrival hr{
+    color: #BE9242;
+    border: 1px solid #BE9242;
+    position: absolute;
+    left: 45%;
+    right: 50%;
+    top: 40%;
+}
+.arrival p{
+    font-size: 30px;
+    line-height: 47px;
+    margin-top: 20px;
+    font-weight: 300;
+}
+.dishes{
+    background-color: white;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+.deals{
+    width:100%;
+    background-color: #C39A51;
+    height: 350px;
+    display: flex;
+}
+.deals .rounddeal{
+    width: 420px;
+    height:500px;
+    background-color : white;
+    margin-left: 10px;
+    z-index: 100;
+}
+.bowl, .wood, .clock, .broker{
+    display: flex;
+    flex-direction: column;
+    background-color: #EDEDED;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 10px;
+}
+.bowl .img{
+    border-radius: 20px;
+    text-align: center;
+    background-color: #EDEDED;
+    width: 100%;
+    height: 430px;
+}
+.clock .img{
+    border-radius: 20px;
+    text-align: center;
+    background-color: #EDEDED;
+    width: 100%;
+    height: 430px;
+}
+.clock .img img{
+    width: 70%;
+    text-align: center;
+    margin-top: 50px;
+}
+.broker{
+    margin-top: 30px;
+    margin-left:0;
+    overflow: hidden;
+}
+.broker .img{
+    border-radius: 20px;
+    text-align: center;
+    background-color: #EDEDED;
+    width: 100%;
+    height: 430px;
+
+}
+.broker .img img{
+    width: 80%;
+    margin-top: 50px;
+}
+.wood{
+    margin-top: 50px;
+}
+.wood .img{
+    border-radius: 20px;
+    text-align: center;
+    background-color: #EDEDED;
+    width: 100%;
+    height: 430px;
+}
+.wood .img img{
+    margin-top: 30px;
+}
+.bowl .img img{
+    margin-top: 30px;
+}
+.bowl, .text{
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.bowl .text{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+/* tunisian */
+.deco{
+    height: auto;
+}
+.container-fluid .for{
+    background-color:#F6F6F6;
+    text-align: center;
+    max-width: 100%;
+    height:550px;
+    display: flex;
+    flex-direction: column;
+}
+.container-fluid .for .h1{
+    margin-top: 50px;
+}
+.container-fluid .for h1{
+    font-size: 120px;
+    color: #C39A51;
+    font-weight: 400;
+    line-height: 1.5em;
+
+}
+.for h3{
+    font-size: 60px;
+    font-weight: 400;
+}
+.for h4{
+    font-size: 45px;
+    font-weight:400;
+}
+.for h5{
+    font-size: 38px;
+    font-weight: 400;
+}
+.container-fluid .manufecturing{
+    max-width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.pics{
+    position: relative;
+}
+.pics .piccolor{
+    position: absolute;
+    background-color: #C39A51;
+    width: 400px;
+    height: 663px;
+    top: -15%;
+    left: 3%;
+}
+.pics .picDecor{
+    position: absolute;
+    width: 50%;
+    top: -10%;
+    right: 17%;
+}
+.pics .picDecor img{
+    margin: auto;
+}
+.img1{
+    position: absolute;
+    top: 20%;
+    left: -8%;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    height: 145px;
+}
+.img1 img{
+    width: 90%;
+    margin: auto;
+    
+}
+.img2{
+    position: absolute;
+    top: 45%;
+    left: -8%;
+    background-color: white;
+    display: flex;
+    height: 150px;
+}
+.img2 img{
+    width: 90%;
+    margin: auto;
+}
+.img3{
+    position: absolute;
+    top: 70%;
+    left: -6%;
+    height: 143px;
+    display: flex;
+    background-color: white;
+}
+.img3 img{
+    width: 90%;
+    margin: auto;
+}
+.manufecturing .text{
+    margin-top:30px;
+    max-width:100%;
+}
+.manufecturing .text .header h3{
+    font-size: 41px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.manufecturing .text .paragraph p{
+    margin-top: 60px;
+    font-size:25px;
+    font-weight:300;
+}
+.manufecturing .text button{
+    border: 1px solid #707070;
+    border-radius:8px;
+    padding: 10px 30px ;
+    font-size: 27px;
+    color: #887B7B;
+    margin-top: 120px;
+}
+/* read more */
+.blog{
+    height: 80vh;
+    background-color: white;
+    margin-top: 10em;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+}
+.blog .head1{
+    margin-left: 35px;
+    margin-bottom: 5px;
+}
+.blog .head1 h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #707070;
+}
+.blog .read{
+    background-color: #6C6D75;
+    text-align: center;
+}
+.blog .read button{
+    margin-top:30px;
+    padding: 5px 40px;
+    border: 3px solid #FEFEFE;
+    border-radius: 8px;
+    color: #E6E2E2;
+    font-size: 18px;
+    font-weight:400;
+}
+.blog p{
+    color: #F8F5F5;
+    font-size: 22px;
+    font-weight: 300;
+}
+.blog .dark{
+    background-color: #6C6D75;
+    width: 100%;
+    height: 100%;
+}
+.blog .blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    height: 100%;
+}
+.blog .blogs .blog1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+   }
+.blog .blogs .blog1 .img{
+    position: absolute;
+    text-align: center;
+    align-self: center;
+    top: -10%;
+    left: -8%;
+}
+.blog .blogs .blog1 .texto{
+    position: absolute;
+    align-self: center;
+    bottom: 5%;
+    width: 350px;
+    left: 8%;
+}
+.blog .blogs .blog2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.blog .blogs .blog2 .img{
+    position: absolute;
+    text-align: center;
+    align-self: center;
+    text-align: center;
+    top: -23%;
+    left: -4%
+}
+.blog .blogs .blog2 .texto{
+    position: absolute;
+    align-self: center;
+    width: 400px;
+    bottom: -5%;
+}
+.blog .blogs .blog3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.blog .blogs .blog3 .img{
+    position: absolute;
+    text-align: center;
+    align-self: center;
+    text-align: center;
+    top: -18%;
+    left: -9%
+}
+.blog .blogs .blog3 .texto{
+    position: absolute;
+    align-self: center;
+    width: 320px;
+    top: 45%;
+    left: 8%;
+}
+.blog .dark .blogs img{
+    width: 70%;
+}
+/* FAQ */
+.fu{
+    margin-top: 90px;
+    height: 80vh;
+}
+.faqq{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.faqH1{
+    text-align: center;
+    font-size: 55px;
+    font-weight: 400 ;
+    margin-top: 50px;
+}
+.faqq .faq{
+    border: 1px solid #707070;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content:center;
+    padding: 50px;
+    margin-top: 40px;
+    width: 700px;
+    height:180px;
+}
+.faq .plus{
+    align-self: center;
+}
+.faq .paragraph{
+    align-self: center;
+    width: 360px;
+}
+.faq .paragraph p{
+    align-self: center;
+    font-size: 21.9px;
+}
+
+/* newletter */
+.newsletter{
+    background-color:#8C8C8E;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 5px 0;
+    color: white;
+    font-weight: 300;
+    margin-top: 100px;
+}
+.newsletter .text{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 150px;
+    display: flex;
+    width: 200px;
+    font-size: 18px;
+}
+.newsletter .text .img{
+    margin-right: 9px;
+    margin-top : 10px;
+}
+.newsletter .sub{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 60px;
+    font-size: 18px;
+}
+.newsletter .sub .tx{
+    margin-right: 20px;
+    margin-left: 30px;
+    width: 200px;
+}
+.sub form input{
+    width: 500px;
+    color: white;
+    border-top-right-radius: 0;
+    border-end-end-radius: 0;
+    padding: 10px;
+}
+
+form .search{
+    background-color: #C3A255;
+    color: white;
+    border-top-left-radius: 0;
+    border-end-start-radius: 0;
+    width: 120px;
+}
+.line{
+    border-left: 6px solid white;
+    height: 100px;
+    margin-top: -20px;
+    
+}
+/* footer */
+.footer{
+    background-color:#8C8C8E;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+
+}
+.footer .info{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 20px 30px 40px 50px;
+    height: 50%;
+}
+.footer .information{
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+}
+.footer .account{
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+}
+.footer .company{
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+}
+.footer .contact p{
+    margin-top: 20px;
+    width: 250px;
+}
+.footer .titleinfo{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.footer .titleinfo ~ .inner{
+    margin-top: 20px;
+}
+.inner{
+    margin-bottom : -30px;
+}
+.footer a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.copy{
+    background-color: white;
+    width: 100%;
+}
+.copy p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
+    margin: 20px 0;
+}
